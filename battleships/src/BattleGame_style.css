@@ -20,7 +20,7 @@ td {
   border: 1px solid white
 }
 
-#pTest {
+#row {
   height: 57px; 
   width: 57px; 
   border: 1px solid white
@@ -54,7 +54,7 @@ td {
   font-size: 24px; 
   font-weight: bold;
   display: block; 
-  margin-top: 620px; 
+  /* margin-top: 620px;  */
   margin-left: auto; 
   margin-right: auto; 
   height: 35px; 
