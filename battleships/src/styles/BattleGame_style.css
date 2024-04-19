@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #081f37;
 }
 
 .playerField {
@@ -23,26 +23,17 @@ td {
 #row {
   height: 57px; 
   width: 57px; 
-  border: 1px solid white
+  border: 1px solid white;
+  pointer-events: none;
 }
 
-#test {
+#firstRow{
+  pointer-events: none;
+}
+
+#test, #firstRow {
   display: flex;
   flex-wrap: nowrap;
-}
-
-#upper-row {
-  display: block; 
-  margin-left: 28rem; 
-  margin-right: auto; 
-  width: 610px;
-  color: bisque;
-}
-#leftRow {
-  margin-left: 26rem;
-  float: left; 
-  width: 2%;
-  color: bisque;
 }
 
 .game {
