@@ -6,14 +6,15 @@ import {
   } from "react-router-dom";
 
   import Game from "./pages/BattleGame";
-  import Menu from "./components/Menu";
+  import ShipPlacingBoard from "./pages/ShipPlacingBoard";
+  import Menu from "./pages/Menu";
 
   function App() {
     return(
         <Router>
             <Routes>
                 <Route path="/" element={<Menu />}/>
-                <Route path="/singlePlayer" element={<Game />}/>
+                <Route path="/singlePlayer" element={<ShipPlacingBoard />}/>
             </Routes>
         </Router>
 

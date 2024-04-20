@@ -2,40 +2,6 @@ body {
   background-color: #030f1d;
 }
 
-.playerField {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid white;
-}
-td {
-  width: 57px;
-  height: 57px; 
-  text-align: center;
-}
-
-.butt {
-  height: 57px; 
-  width: 57px; 
-  border: 1px solid white
-}
-
-#row {
-  height: 57px; 
-  width: 57px; 
-  border: 1px solid white;
-  pointer-events: none;
-}
-
-#firstRow{
-  pointer-events: none;
-}
-
-#test, #firstRow {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .game {
   text-align: center
 }

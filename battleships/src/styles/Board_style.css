@@ -1,0 +1,28 @@
+.playerField {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid white; */
+  }
+  
+.square {
+    height: 57px; 
+    width: 57px; 
+    border: 1px solid white
+}
+  
+#row {
+    height: 57px; 
+    width: 57px; 
+    border: 1px solid white;
+    pointer-events: none;
+}
+  
+#firstRow{
+    pointer-events: none;
+}
+  
+#few_squares, #firstRow {
+    display: flex;
+    flex-wrap: nowrap;
+}
