@@ -6,12 +6,33 @@ import Destroyer from "../assets/ShipDestroyerHull.png"
 import Patrol from "../assets/ShipPatrolHull.png"
 import Submarine from "../assets/ShipSubMarineHull.png"
 
+const ships = [
+    {
+        name: "submarine",
+        style: "not-rotated"
+    },
+    {
+        name: "patrol",
+        style: "not-rotated"
+    }
+]
+
 function ShipPlacingBoard() {
-    const[style, setRotate] = useState("not-rotated");
-    const rotate = () => {
-        console.log("click");
-        if (style === "not-rotated") setRotate("rotated");
-            else setRotate("not-rotated");
+    const[ships_rotation, setRotate] = useState(ships);
+    const rotate = (idx: string) => {
+        console.log(idx);
+        setRotate(
+            ships_rotation.map((ship) =>
+                ship.name === idx 
+                ? {
+                    ...ship, style: ship.style === "rotated" ? "not-rotated" : "rotated"
+                } : { ...ship }
+            )
+            // if (ships[idx].style === "not-rotated") setRotate("rotated");
+            // else setRotate("not-rotated");
+        );
+        console.log(ships_rotation);
+        
     };
     return (
         <div>
@@ -21,7 +42,7 @@ function ShipPlacingBoard() {
                     <img src={Destroyer} alt="Destroyer" />
                     <img src={Battleship} alt="Battleship" />
                     <img src={Patrol} alt="Patrol" />
-                    <img src={Submarine} alt="Submarine" className={style} onDoubleClick={rotate}/>
+                    <img src={Submarine} alt="Submarine" className={ships[0].style} onDoubleClick={() => rotate("submarine")}/>
 
                 </div>
             </div>
